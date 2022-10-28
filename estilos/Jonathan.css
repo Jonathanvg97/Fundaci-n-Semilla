@@ -217,7 +217,7 @@ details > summary:first-of-type {
     display: flex;
     list-style-type: none;
     justify-content: center;
-    gap: 5rem;
+    gap: 2rem;
     font-size: 24px;
     padding-top: 2rem;
 }
@@ -252,7 +252,80 @@ details > summary:first-of-type {
     color: #009470;
 }
 
+.copy{
+    float: right;
+    display: flex;
+    height: 30px;
+}
 
 
+/*responsive celular*/
+@media (max-width: 640px) {
+
+
+}
 
   
+
+
+
+/*estilos emoji*/
+
+.contenedor{
+    height: 400px;
+    width: 400px;
+    cursor: pointer;
+    margin: 120px auto;
+}
+
+.contenedor .cara{
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    background: linear-gradient(rgb(231,204,134),#feca45,#feca45);
+    box-shadow: 0 0 10px #000;
+    inset: 0 0 40px #f1952d;
+}
+
+.contenedor .cara .cont-ojos{
+    position: relative;
+    top: 120px;
+    height: 100px;
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cont-ojos .ojos{
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+    background-color: #fff;
+    box-shadow: inset0 0 10px #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ojos .ocular{
+    height: 40px;
+    width: 35px;
+    background-color: #000;
+    border-radius: 50%;
+    transition: .5s;
+}
+
+.boca{
+    height: 80px;
+    width: 120px;
+    background-color: #76370a;
+    margin: 200px auto;
+    border-radius: 50%;
+}
+
+.cara:hover .ocular{
+    transform: translateY(-27px);
+}
+

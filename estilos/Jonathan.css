@@ -104,35 +104,63 @@ header h1{
 }
 
 .foto{
+    margin: 0px 90px ;
     height: 120px;
-    padding-left: 20px;
-    font-size: 0px;
-    padding: 0px;
+    width: 120px;
+    display: none;
+}
+
+.nombreDocente{
+    text-align:center;
+    justify-content: center;
+    margin: 10px;
+    display: none;
+    font-size: 16px;
+    font-weight: bold;
 }
 
 .barra .salir{
     text-align: center;
-    text-decoration: none;
-    list-style: none;
-    transition: .3s all;
-    font-size: 0px; 
+    transition: .4s all;
+    font-size: 0px;
     color: #fff;
     cursor: pointer;
 }
 
-.foto:hover{
-    
+.barra .logo2{
+    margin: 180px 80px ;
+    height: 120px;
+    width: 120px;
+    display: none;
 }
+
 
 .barra:hover{
     font-size: 14px;
     width: 20%;
+    height: 100%px;
     background-color: #009470;
 }
+
+.barra:hover .hamburguesa{
+    display: none; /*se desaparece el menu hamburguesa*/
+ } 
 
 .barra:hover h2{
     padding: 20px;
     font-size: 28px;
+}
+
+.barra:hover img{
+    display: block;
+    height: 120px;
+    width: 120px;
+    
+}
+
+.barra:hover span{
+    display: flex;
+   text-align: center;
 }
 
 .barra:hover a{
@@ -141,11 +169,6 @@ header h1{
     display: block;
     padding: 18px; /*espacio entre los items de cada opcion*/
 }
-
-.barra:hover img{
-    height: 0px;
-}
-
 
 .barra:hover a:hover{
     border-radius: 40rem;
@@ -165,6 +188,9 @@ header h1{
     font-size: 24px;
     background-color:#FF0404 ;
     padding: 1rem;
+    margin: 40px;
+    margin-top: 400px;
+
 }
 
 
@@ -202,7 +228,7 @@ details > summary:first-of-type {
     font-family: 'Playfair Display', serif;
     color:#fff;
     background: #000;
-    padding: 50px;
+    padding: 30px;
 }
 
 .piePagina1{
@@ -269,13 +295,14 @@ details > summary:first-of-type {
 
 
 
-/*estilos emoji*/
+/*estilos emoji sorprendido*/
 
 .contenedor{
-    height: 400px;
-    width: 400px;
+    height: 160px;
+    width: 160px;
     cursor: pointer;
-    margin: 120px auto;
+    margin: 140px 280px;
+    position: relative;
 }
 
 .contenedor .cara{
@@ -289,7 +316,7 @@ details > summary:first-of-type {
 
 .contenedor .cara .cont-ojos{
     position: relative;
-    top: 120px;
+    top:6px; /*SEPARA OJOS DE LA CABEZ*/
     height: 100px;
     width: 80%;
     margin: 0 auto;
@@ -299,7 +326,7 @@ details > summary:first-of-type {
 }
 
 .cont-ojos .ojos{
-    height: 120px;
+    height: 80px;
     width: 120px;
     border-radius: 50%;
     background-color: #fff;
@@ -310,18 +337,18 @@ details > summary:first-of-type {
 }
 
 .ojos .ocular{
-    height: 40px;
-    width: 35px;
+    height: 20px;
+    width: 20px;
     background-color: #000;
     border-radius: 50%;
     transition: .5s;
 }
 
 .boca{
-    height: 80px;
-    width: 120px;
+    height: 40px;
+    width: 60px;
     background-color: #76370a;
-    margin: 200px auto;
+    margin: 10px auto;
     border-radius: 50%;
 }
 
@@ -329,3 +356,64 @@ details > summary:first-of-type {
     transform: translateY(-27px);
 }
 
+
+/*estilos emoji cerrando ojo*/
+
+.contenedor2{
+    height: 160px;
+    width: 160px;
+    cursor: pointer;
+    margin: 140px 0px;
+    position: relative;
+}
+
+.contenedor2 .cara2{
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    background: linear-gradient(rgb(231,204,134),#feca45,#feca45);
+    box-shadow: 0 0 10px #000;
+    inset: 0 0 40px #f1952d;
+}
+
+.contenedor2 .cara .cont-ojos{
+    position: relative;
+    top:6px; /*SEPARA OJOS DE LA CABEZ*/
+    height: 100px;
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cont-ojos .ojos{
+    height: 80px;
+    width: 120px;
+    border-radius: 50%;
+    background-color: #fff;
+    box-shadow: inset0 0 10px #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ojos .ocular{
+    height: 20px;
+    width: 20px;
+    background-color: #000;
+    border-radius: 50%;
+    transition: .5s;
+}
+
+.boca{
+    height: 40px;
+    width: 60px;
+    background-color: #76370a;
+    margin: 10px auto;
+    border-radius: 50%;
+}
+
+.cara:hover .ocular{
+    transform: translateY(-27px);
+}

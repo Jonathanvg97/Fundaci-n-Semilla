@@ -222,18 +222,21 @@ details > summary:first-of-type {
     padding-top: 2rem;
 }
 
+
 .condiciones{
     position: relative;
     display: flex;
     list-style-type: none;
     justify-content: center;
-    font-size: 28px;
+    font-size: 20px;
     padding: 1rem;
+    font-weight: lighter;
 }
 
 .footer span{
     position: relative;
     display: flex;
+    flex-direction: row;
     list-style-type: none;
     justify-content: center;
     font-size: 14px;

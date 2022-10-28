@@ -10,3 +10,236 @@ naranja: #FF3D00
 amarillo: #F2F60E
 verde claro: #B4E944
 verde: #26FF02*/
+
+
+*{
+    margin: 0px;
+    box-sizing: border-box;
+    padding: 0px;
+}
+.encabezado{
+    width: 100%;
+    height: 40%;
+    z-index: 0;
+    position: absolute;
+
+}
+
+.logo{
+    position: absolute;
+    padding-left: 18%;
+    padding-top: 7%;
+    height: 14rem;
+
+}
+
+header h1{
+    position:absolute; 
+}
+
+.principal{
+    text-align: center;
+    justify-content: center;
+    font-size: 40px;
+    padding-left: 32%;
+    margin-top: 100px;
+}
+
+
+.barra{
+    font-family:'Playfair Display', serif; 
+    width: 10%;
+    height: 9%;
+    position:relative;
+    transition: .4s all;
+    z-index: 1;
+  
+}
+
+.barra ul{
+    list-style: none; 
+    padding-top: 8rem;
+}
+.barra li{
+    transition: .3s all;
+}
+
+
+.barra summary{
+    text-align: center;
+    transition: .4s all;
+    font-size: 0px;
+}
+
+.barra ul li{
+    text-align: left; /*alinear los textos dentro del menu*/
+
+}
+
+.barra ul li details{
+    padding: 7px;
+    padding-bottom: 10px; /*Separa la distancia entre diplomados, horario y notas*/
+    list-style-type: none;
+}
+
+.barra a{
+    text-align: center;
+    text-decoration: none;
+    list-style: none;
+    transition: .3s all;
+    font-size: 0px;
+}
+
+.barra img{
+    padding-top: 30px;
+    padding-left: 10px;
+}
+
+.barra h2{
+    text-align: center;
+    color: #fff;
+    padding: 7px;
+    padding-bottom: 7px;
+    font-size: 0px;
+}
+
+.foto{
+    height: 120px;
+    padding-left: 20px;
+    font-size: 0px;
+    padding: 0px;
+}
+
+.barra .salir{
+    text-align: center;
+    text-decoration: none;
+    list-style: none;
+    transition: .3s all;
+    font-size: 0px; 
+    color: #fff;
+    cursor: pointer;
+}
+
+.foto:hover{
+    
+}
+
+.barra:hover{
+    font-size: 14px;
+    width: 20%;
+    background-color: #009470;
+}
+
+.barra:hover h2{
+    padding: 20px;
+    font-size: 28px;
+}
+
+.barra:hover a{
+    font-size: 15px;
+    color: #000;
+    display: block;
+    padding: 18px; /*espacio entre los items de cada opcion*/
+}
+
+.barra:hover img{
+    height: 0px;
+}
+
+
+.barra:hover a:hover{
+    border-radius: 40rem;
+    font-size: 18px;
+    background-color: #B0CFC1
+}
+
+.barra:hover summary{
+    border-radius: 40rem;
+    font-size: 24px;
+    background-color: #4CFDB6;
+    padding: 1rem;
+}
+
+.barra:hover .salir{
+    border-radius: 40rem;
+    font-size: 24px;
+    background-color:#FF0404 ;
+    padding: 1rem;
+}
+
+
+details[open] .detalle{
+    position: fixed;
+    z-index: -1;
+}
+
+details[open] .detalle{
+    position: absolute;
+    z-index: -1;
+}
+
+summary::marker{/*quitar decoracion desplegables*/
+    content: "";
+}
+
+
+
+details > summary:first-of-type {
+    list-style: inside disclosure-closed;
+    cursor: pointer;
+}
+
+
+details > summary:first-of-type {
+    list-style: inside disclosure-closed;
+    cursor: pointer;
+}
+
+
+/*Footer*/
+
+.footer{
+    font-family: 'Playfair Display', serif;
+    color:#fff;
+    background: #000;
+    padding: 50px;
+}
+
+.piePagina1{
+    display: flex;
+    list-style-type: none;
+    flex-wrap: wrap;
+    justify-content:space-evenly;
+}
+
+.piePagina2{
+    position: relative;
+    display: flex;
+    list-style-type: none;
+    justify-content: center;
+    gap: 5rem;
+    font-size: 28px;
+    padding-top: 2rem;
+}
+
+.condiciones{
+    position: relative;
+    display: flex;
+    list-style-type: none;
+    justify-content: center;
+    font-size: 28px;
+    padding: 1rem;
+}
+
+.footer span{
+    position: relative;
+    display: flex;
+    list-style-type: none;
+    justify-content: center;
+    font-size: 14px;
+    padding: 1rem
+}
+
+
+
+  

@@ -291,6 +291,15 @@ details > summary:first-of-type {
 
 }
 
+.emojis{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 5rem;
+    margin: 10rem;
+
+}
+
 
 /*estilos emoji muerto*/
 
@@ -298,7 +307,7 @@ details > summary:first-of-type {
     height: 160px;
     width: 160px;
     cursor: pointer;
-    margin: 140px 280px;
+   
     position: relative;
 }
 
@@ -361,7 +370,6 @@ details > summary:first-of-type {
     height: 160px;
     width: 160px;
     cursor: pointer;
-    margin: 140px 280px;
     position: relative;
 }
 
@@ -423,7 +431,6 @@ details > summary:first-of-type {
     height: 160px;
     width: 160px;
     cursor: pointer;
-    margin: 20px 280px;
     position: relative;
 }
 
@@ -447,11 +454,10 @@ details > summary:first-of-type {
     align-items: center;
 }
 
-.cont-ojos2 .ojos1{
-    height: 70px;
-    width: 60px;
+.cont-ojos2 .ojos2{
+    height: 80px;
+    width: 120px;
     border-radius: 50%;
-    margin: 4px;
     background-color: #fff;
     box-shadow: inset0 0 10px #000;
     display: flex;
@@ -459,16 +465,7 @@ details > summary:first-of-type {
     align-items: center;
 }
 
-
-.cont-ojos2 .ojos2{
-  
-    box-shadow: inset0 0 10px #000;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.ojos1 .ocular1{
+.ojos2 .ocular2{
     height: 20px;
     width: 20px;
     background-color: #000;
@@ -476,30 +473,17 @@ details > summary:first-of-type {
     transition: .5s;
 }
 
-.ojos2 .ocular2{
-    height: 40px;
-    width: 40px;
-    background-color: #000;
-    transition: .5s;
-    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 70% 59%, 84% 100%, 49% 78%, 12% 100%, 29% 59%, 0 35%, 39% 35%);
-}
-
 .boca2{
     height: 40px;
-    width: 80px;
-    background-color: #76370a;
-    margin: 10px auto;
-    border-radius: 20%;
-    clip-path: polygon(55% 68%, 78% 59%, 96% 36%, 92% 74%, 76% 91%, 54% 98%, 27% 91%, 8% 70%, 4% 39%, 27% 62%);
-
+    width: 60px;
+    background-color: transparent;
+    margin: auto;
+    border-radius: 50%;
+    border-bottom: 20px solid #000;
 }
 
-.cara2:hover .ocular1{
-    transform: translateY(-27px);
-}
-
-.cara2:hover .ocular2{
-    background-color: #FF0404;
+.cara2:hover .boca2{
+    transform: scale(2);
 }
 
 
@@ -509,7 +493,6 @@ details > summary:first-of-type {
     height: 160px;
     width: 160px;
     cursor: pointer;
-    margin: 140px 280px;
     position: relative;
 }
 
@@ -577,11 +560,11 @@ details > summary:first-of-type {
 
 .boca3{
     height: 40px;
-    width: 80px;
-    background-color: #76370a;
-    margin: 10px auto;
-    border-radius: 20%;
-    clip-path: polygon(55% 68%, 78% 59%, 96% 36%, 92% 74%, 76% 91%, 54% 98%, 27% 91%, 8% 70%, 4% 39%, 27% 62%);
+    width: 60px;
+    background-color: transparent;
+    margin: auto;
+    border-radius: 50%;
+    border-bottom: 10px solid #000;
 }
 
 .cara3:hover .ocular3{

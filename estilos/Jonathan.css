@@ -291,8 +291,68 @@ details > summary:first-of-type {
 
 }
 
-  
 
+/*estilos emoji muerto*/
+
+.contenedor4{
+    height: 160px;
+    width: 160px;
+    cursor: pointer;
+    margin: 140px 280px;
+    position: relative;
+}
+
+.contenedor4 .cara4{
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    background: linear-gradient(rgb(231,204,134),#feca45,#feca45);
+    box-shadow: 0 0 10px #000;
+    inset: 0 0 40px #f1952d;
+}
+
+.contenedor4 .cara4 .cont-ojos4{
+    position: relative;
+    top:6px; /*SEPARA OJOS DE LA CABEZ*/
+    height: 100px;
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cont-ojos4 .ojos4{
+    height: 80px;
+    width: 120px;
+    border-radius: 50%;
+    background-color: #fff;
+    box-shadow: inset0 0 10px #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ojos4 .ocular4{
+    height: 20px;
+    width: 20px;
+    background-color: #000;
+    clip-path: polygon(20% 0%, 0% 20%, 30% 50%, 0% 80%, 20% 100%, 50% 70%, 80% 100%, 100% 80%, 70% 50%, 100% 20%, 80% 0%, 50% 30%);
+    transition: .5s;
+}
+
+.boca4{
+    height: 40px;
+    width: 60px;
+    background-color: #76370a;
+    margin: 10px auto;
+    border-radius: 20%;
+}
+
+.cara4:hover .ocular4{
+    transform: scale(3);
+    /* transform: translateY(-27px); */
+}
 
 
 /*estilos emoji sorprendido*/
@@ -363,7 +423,7 @@ details > summary:first-of-type {
     height: 160px;
     width: 160px;
     cursor: pointer;
-    margin: 140px 0px;
+    margin: 20px 280px;
     position: relative;
 }
 
@@ -376,7 +436,7 @@ details > summary:first-of-type {
     inset: 0 0 40px #f1952d;
 }
 
-.contenedor2 .cara .cont-ojos{
+.contenedor2 .cara2 .cont-ojos2{
     position: relative;
     top:6px; /*SEPARA OJOS DE LA CABEZ*/
     height: 100px;
@@ -387,7 +447,93 @@ details > summary:first-of-type {
     align-items: center;
 }
 
-.cont-ojos .ojos{
+.cont-ojos2 .ojos1{
+    height: 70px;
+    width: 60px;
+    border-radius: 50%;
+    margin: 4px;
+    background-color: #fff;
+    box-shadow: inset0 0 10px #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.cont-ojos2 .ojos2{
+  
+    box-shadow: inset0 0 10px #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ojos1 .ocular1{
+    height: 20px;
+    width: 20px;
+    background-color: #000;
+    border-radius: 50%;
+    transition: .5s;
+}
+
+.ojos2 .ocular2{
+    height: 40px;
+    width: 40px;
+    background-color: #000;
+    transition: .5s;
+    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 70% 59%, 84% 100%, 49% 78%, 12% 100%, 29% 59%, 0 35%, 39% 35%);
+}
+
+.boca2{
+    height: 40px;
+    width: 80px;
+    background-color: #76370a;
+    margin: 10px auto;
+    border-radius: 20%;
+    clip-path: polygon(55% 68%, 78% 59%, 96% 36%, 92% 74%, 76% 91%, 54% 98%, 27% 91%, 8% 70%, 4% 39%, 27% 62%);
+
+}
+
+.cara2:hover .ocular1{
+    transform: translateY(-27px);
+}
+
+.cara2:hover .ocular2{
+    background-color: #FF0404;
+}
+
+
+/*estilos emoji encantado*/
+
+.contenedor3{
+    height: 160px;
+    width: 160px;
+    cursor: pointer;
+    margin: 140px 280px;
+    position: relative;
+}
+
+.contenedor3 .cara3{
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    background: linear-gradient(rgb(231,204,134),#feca45,#feca45);
+    box-shadow: 0 0 10px #000;
+    inset: 0 0 40px #f1952d;
+}
+
+.contenedor3 .cara3 .cont-ojos3{
+    position: relative;
+    top:6px; /*SEPARA OJOS DE LA CABEZ*/
+    height: 100px;
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cont-ojos3 .ojos3{
     height: 80px;
     width: 120px;
     border-radius: 50%;
@@ -398,22 +544,47 @@ details > summary:first-of-type {
     align-items: center;
 }
 
-.ojos .ocular{
+.ojos3 .ocular3{
     height: 20px;
     width: 20px;
-    background-color: #000;
-    border-radius: 50%;
-    transition: .5s;
+    background-color: red;
+    transform: rotate(45deg);
+    box-shadow: 5px 5px 20px #f20044;
+    
 }
 
-.boca{
+.ocular3::before{
+    content: "";
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    background-color: red;
+    right: 50%;
+    border-radius: 50%;
+    box-shadow:  5px 5px 20px #f20044;
+}
+
+.ocular3::after{
+    content: "";
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    background-color: red;
+    top: -50%;
+    border-radius: 50%;
+    box-shadow:  5px 5px 20px #f20044;
+}
+
+.boca3{
     height: 40px;
-    width: 60px;
+    width: 80px;
     background-color: #76370a;
     margin: 10px auto;
-    border-radius: 50%;
+    border-radius: 20%;
+    clip-path: polygon(55% 68%, 78% 59%, 96% 36%, 92% 74%, 76% 91%, 54% 98%, 27% 91%, 8% 70%, 4% 39%, 27% 62%);
 }
 
-.cara:hover .ocular{
-    transform: translateY(-27px);
+.cara3:hover .ocular3{
+    transform: rotate(45deg) scale(1.10);
 }
+

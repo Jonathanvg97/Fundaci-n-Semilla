@@ -1,0 +1,294 @@
+/*responsive tablet*/
+@media only screen and (min-width:768px) and (max-width:820px) {
+    /* Solo tablet  */
+    /*header*/
+   *{
+    margin: 0px;
+    box-sizing: border-box;
+    padding: 0px;
+}
+
+    .encabezado{
+        height: 20%;
+        width: 100%;
+    }
+
+   .principal{
+    font-size: 30px;
+    text-align: center;
+    justify-content: center;
+    padding-left: 18%;
+    margin-top: 90px;
+   }
+
+.logo{
+        padding-left: 10%;
+        height:8rem;
+   }
+
+.barra{
+    position:relative;
+    transition: .4s all;
+    z-index: 1;  
+    }
+
+.barra:hover{
+    width: 40%;
+}
+
+.barra:hover h2{
+    padding: 30px;
+    font-size: 35px;
+}
+
+.foto{
+    margin: 0px 70px ;
+    height: 100px;
+    width: 100px;
+    display: none;
+}
+
+.barra:hover img{
+    display: block;
+    height: 160px;
+    width: 160px;
+}
+
+.nombreDocente{
+    font-size: 24px;
+}
+
+.barra:hover summary{
+    font-size: 26px;
+    padding: 1rem;
+}
+
+.barra:hover a{
+    font-size: 22px;
+}
+
+.barra .logo2{
+    margin: 180px 70px ;
+}
+
+.barra:hover .salir{
+    font-size: 26px;
+    margin: 10px;
+    padding: 1rem;
+}
+
+.copy{
+    float: right;
+    display: flex;
+    height: 40px;
+    margin: -15px;
+}
+
+/*animaciones emojis*/
+
+/*estilos emoji sorprendido*/
+
+.contenedor{
+    height: 80px;
+    width: 80px;
+    cursor: pointer;
+    position: relative;
+}
+
+.contenedor .cara{
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    background: linear-gradient(rgb(231,204,134),#feca45,#feca45);
+    box-shadow: 0 0 5px #000;
+    inset: 0 0 10px #f1952d;
+}
+
+.contenedor .cara .cont-ojos{
+    top:-20px; /*SEPARA OJOS DE LA CABEZ*/
+    height: 110px;
+    width: 80%;
+}
+
+.cont-ojos .ojos{
+    height: 40px;
+    width: 40px;
+    box-shadow: inset0 0 5px #000;
+}
+
+.ojos .ocular{
+    height: 10px;
+    width: 10px;
+}
+
+.boca{
+    height: 20px;
+    width:20px;
+    margin: -54px auto;
+    
+}
+
+.cara:hover .ocular{
+    transform: translateY(-15px);
+}
+
+/*estilos emoji muerto*/
+
+.contenedor4{
+    height: 80px;
+    width: 80px; 
+}
+
+.contenedor4 .cara4{
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    background: linear-gradient(rgb(231,204,134),#feca45,#feca45);
+    box-shadow: 0 0 5px #000;
+    inset: 0 0 10px #f1952d;
+}
+
+.contenedor4 .cara4 .cont-ojos4{
+    top:-20px; /*SEPARA OJOS DE LA CABEZ*/
+    height: 110px;
+    width: 80%;
+}
+
+.cont-ojos4 .ojos4{
+    height: 40px;
+    width: 40px;
+    box-shadow: inset0 0 5px #000;
+}
+
+.ojos4 .ocular4{
+    height: 10px;
+    width: 10px;
+}
+
+.boca4{
+    height: 20px;
+    width:20px;
+    margin: -54px auto;
+}
+
+/*estilos emoji cerrando ojo*/
+
+.contenedor2{
+    height: 80px;
+    width: 80px;
+}
+
+.contenedor2 .cara2{
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    background: linear-gradient(rgb(231,204,134),#feca45,#feca45);
+    box-shadow: 0 0 5px #000;
+    inset: 0 0 10px #f1952d;
+}
+
+.contenedor2 .cara2 .cont-ojos2{
+    top:-20px; /*SEPARA OJOS DE LA CABEZ*/
+    height: 110px;
+    width: 80%;
+}
+
+.cont-ojos2 .ojos2{
+    height: 40px;
+    width: 40px;
+    box-shadow: inset0 0 5px #000;
+}
+
+.ojos2 .ocular2{
+    height: 10px;
+    width: 10px;
+}
+
+.boca2{
+    height: 20px;
+    width:30px;
+    margin: -55px auto;
+    border-bottom: 12px solid #000;
+}
+
+.cara2:hover .boca2{
+    transform: scale(2);
+}
+
+
+/*estilos emoji encantado*/
+
+.contenedor3{
+    height: 80px;
+    width: 80px;
+}
+
+.contenedor3 .cara3{
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    background: linear-gradient(rgb(231,204,134),#feca45,#feca45);
+    box-shadow: 0 0 5px #000;
+    inset: 0 0 10px #f1952d;
+}
+
+.contenedor3 .cara3 .cont-ojos3{
+    top:-20px; /*SEPARA OJOS DE LA CABEZ*/
+    height: 110px;
+    width: 80%;
+}
+
+.cont-ojos3 .ojos3{
+    height: 40px;
+    width: 40px;
+    box-shadow: inset0 0 5px #000;
+}
+
+.ojos3 .ocular3{
+    height: 10px;
+    width: 10px;
+    background-color: red;
+    transform: rotate(45deg);
+    box-shadow: 3px 3px 10px #f20044;
+    
+}
+
+.ocular3::before{
+    height: 10px;
+    width: 10px;
+    background-color: red;
+    right: 50%;
+    border-radius: 50%;
+    box-shadow:  3px 3px 10px #f20044;
+}
+
+.ocular3::after{
+    content: "";
+    position: absolute;
+    height: 10px;
+    width: 10px;
+    background-color: red;
+    top: -50%;
+    border-radius: 50%;
+    box-shadow:  3px 3px 10px #f20044;
+}
+
+.boca3{
+    height: 20px;
+    width: 40px;
+    margin: -55px auto;
+    border-bottom: 5px solid #000;
+}
+
+.cara3:hover .ocular3{
+    transform: rotate(45deg) scale(1.10);
+}
+
+.reacciones{
+    font-size: 16px;
+    display: flex;
+    flex-direction: row;
+    gap: 3rem;
+}
+
+}

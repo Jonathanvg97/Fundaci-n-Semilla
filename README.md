@@ -22,3 +22,6 @@ Documentación Semilla
 4.HEADER
 en la parte del encabezado se inserto una imagen que iba contener el titulo principal , el menu lateral, y el logo de semillas; 
 
+
+![image](https://user-images.githubusercontent.com/112130785/199104301-c6e76cc9-8487-4586-94fb-502855ec26fb.png)
+

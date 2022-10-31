@@ -37,6 +37,17 @@ en la parte del encabezado se inserto una imagen que iba contener el titulo prin
  ![image](https://user-images.githubusercontent.com/112130785/199106391-b3ffe6c5-0566-4a99-ade3-987717a48fe1.png)
 ![image](https://user-images.githubusercontent.com/112130785/199106458-097df5fd-395d-417e-b057-4293d93ad4cd.png)
 
+7. para los emojis se hicieron atravez de unos divs anidados , cada uno de ellos contenia una parte del emoji , es decir , cara , ojos y boca; luego se le dio estilos  con background color especificco , border radius para que fuera completamente redondo y una seudoclas hover o transform para que implementarle una animacion respectiva a cada emoji.
+![image](https://user-images.githubusercontent.com/112130785/199112952-36eb42d7-bc57-4757-bed9-b4500f1b0d91.png)
+![image](https://user-images.githubusercontent.com/112130785/199113001-b715f430-683a-4627-bebe-ff84f7c674e9.png)
+
+8. para el footer se aplico un display flex para alinear las imagnes en una fila al igual que los terminos y condiciones y las opciones de redirigir a otras paginas con la etiqueta a.
+
+![image](https://user-images.githubusercontent.com/112130785/199113322-c9ce8b1d-fa1a-47d3-8355-286512dd1fa6.png)
+![image](https://user-images.githubusercontent.com/112130785/199113403-87bf56d8-d6ad-4122-891d-949af6985063.png)
+
+
+
 
 
 

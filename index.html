@@ -81,11 +81,137 @@
       <!--Seccion A-->
       <!--Yeimi-->
        
-      
-
-
-
-
+      <div>
+        <input type="text" name="email" placeholder="Nombre Estudiante" class="search">
+        <button class="join">BUSCAR</button>
+    </div>
+    <!--Seccion A-->
+    <!--Container general--->
+    <section class="sectionA">
+        <!--Container 1 Profile-->
+        <section class="profile">
+            <img src="./img/perfil1.png" alt="" class="photo">
+            <div class="selec">
+                <label for="Diplomados"><b>Diplomados cursando</b></label>
+                <select name="Diplomados" id="Diplomados">
+                    <option value="Diplomado1">D. Sostenibilidad Ambiental</option>
+                    <option value="Diplomado2">D. Derecho Ambiental</option>
+                </select>
+            </div>
+            <div class="info">
+                <p><b>Nombre:</b>&nbsp; Alejandra <br><b>Apellidos:</b> &nbsp;Pérez Casas <br><b>Edad</b> &nbsp;28 años <br><b>Sexo:</b> &nbsp;Femenino <br><b>E-mail:</b> &nbsp;aleja03@gmail.com</p> 
+            </div>   
+        </section> 
+        <!--Container Progress--> 
+        <section class="progress">
+            <div class="pa">
+                <h4>Progreso diplomado</h4><span class="gray">Cuanto falta para finalizar el diplomado?</span></p> 
+            </div>
+            <!--GRAPHIC PROGRESS-->
+            <div class="pb">
+                <svg width="200" height="200" id="pb3">
+                    <defs><linearGradient id="pb1" x1="0%" y1="0%"
+                    x2="50%" y2="0%">
+                        <stop offset="0%" style="stop-color:rgb(76, 253, 182);stop-opacity:1"/><stop offset="100%" style="stop-color:rgb(0, 148, 88);stop-opacity:1"/></linearGradient></defs>
+                    <circle cx="100" cy="100" r="100" fill="url(#pb1)">
+                    </circle>
+                    <circle class="pb2" cx="100" cy="100" r="50" ></circle>
+                </svg>
+            </div>
+        </section> 
+        <!--Container Personal Avarage--> 
+        <section class="avarage">
+            <div class="a1">
+                <p>Promedio Estudiante</p><span class="gray">Porcentaje de entregas individuales</span></p> 
+            </div>
+            <!--GRAPHIC PERSONAL AVARAGE-->
+            <div class="a2">
+                <svg width="400" height="100">
+                    <rect class="a2a" width="400" height="100" x="0" y="0" rx="10px" ry="10px"></rect>
+                    <rect class="a2b" width="210" height="100" x="0" y="0" rx="15px" ry="15px"></rect>
+                </svg>
+            </div>
+        </section>
+        <!--Container Global Avarage--> 
+        <section class="global">
+            <div class="g1">
+                <p>Promedio Curso</p><span class="gray">Porcentaje entregas grupal</span></p> 
+            </div>
+            <!--GRAPHIC PERSONAL AVARAGE-->
+            <div class="g2">
+                <svg width="400" height="100">
+                    <rect class="a2a" width="400" height="100" x="0" y="0" rx="10px" ry="10px"></rect>
+                    <rect class="a2b" width="270" height="100" x="0" y="0" rx="15px" ry="15px"></rect>
+                </svg>
+            </div>
+        </section>
+        <!--Container Schedule-->
+        <section class="schedule">
+            <div class="s1">
+                <h4>Calendario de entregas semanal</h4><span class="gray">Actividades que el estudiante tiene programadas</span></p> 
+            </div>
+            <!--Schedule-->
+            <table class="s2">
+                <thead>
+                    <tr>
+                        <td class="s2a"><h4>Lunes</h4></td>
+                        <td class="s2b"><h4>Martes</h4></td>
+                        <td class="s2a"><h4>Miercoles</h4></td>
+                         <td class="s2b"><h4>Jueves</h4></td>
+                            <td class="s2a"><h4>Viernes</h4></td>
+                            <td class="s2b"><h4>Sabado</h4></td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="s2b"><input type="text" name="" id="sc"></td>
+                            <td class="s2a"><input type="text" name="" id="sc1"></td>
+                            <td class="s2b"><input type="text" name="" id="sc"></td>
+                            <td class="s2a"><input type="text" name="" id="sc1"></td>
+                            <td class="s2b"><input type="text" name="" id="sc"></td>
+                            <td class="s2a"><input type="text" name="" id="sc1"></td>
+                        </tr>
+                    </tbody>
+                    <tfoot></tfoot>
+                </table>
+                <div class="s3">
+                    <div class="s3a">
+                        <svg width="170" height="170" class="s3a3">
+                            <line class="s3a1" x1="20" y1="20" x2="150" y2="150"></line>
+                            <line class="s3a2" x1="20" y1="150" x2="150" y2="20" >
+                        </svg>
+                        <h4>&nbsp; &nbsp;No entrego</h4>
+                    </div>
+                    <div class="s3b">
+                        <svg width="170" height="170" class="s3a3">
+                            <line class="s3b1" x1="50" y1="150" x2="150" y2="10"></line>
+                            <line class="s3b2" x1="50" y1="150" x2="20" y2="120" >
+                        </svg>
+                        <h4>&nbsp; &nbsp;Entrego</h4>
+                    </div>  
+                </div>    
+            </section>
+        </section>
+        <!--Seccion B-->
+        <!--Triangulos-->
+        <section class="sectionB">
+            <svg width="280" height="280">
+                <polygon points="80 230, 180 30, 280 230" fill="#FF0404">
+                </polygon>
+            </svg>
+            <svg width="280" height="280">
+                <polygon points="80 230, 180 30, 280 230" fill="#CF7D1D">
+                </polygon>
+            </svg>
+            <svg width="280" height="280">
+                <polygon points="80 230, 180 30, 280 230" fill="#F2F60E">
+                </polygon>
+            </svg>
+            <svg width="280" height="280">
+                <polygon points="80 230, 180 30, 280 230" fill="#009458">
+                </polygon>
+            </svg>
+        </section>
 
       <!--Seccion B-->
       <!--Freddy-->
@@ -180,6 +306,8 @@
 
 
     </main>
+
+    
     <footer>
       <!--Jonathan-->
       <div class="footer">

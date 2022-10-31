@@ -1,0 +1,340 @@
+/*responsive celular*/
+@media only screen and (min-width:310px) and (max-width:480px) {
+    /* Solo mobile  */
+    /*header*/
+   *{
+    margin: 0px;
+    box-sizing: border-box;
+    padding: 0px;
+}
+
+    .encabezado{
+        height: 20%;
+        width: 100%;
+    }
+
+.hamburguesa{
+    height: 40px;
+    margin: 1px;
+    margin-top: -30px;
+}
+
+   .principal{
+    font-size: 16px;
+    text-align: center;
+    justify-content: center;
+    padding-left: 6%;
+    margin-top: 30px;
+   }
+
+   .logo{
+        padding-left: 6%;
+        height:3rem;
+   }
+
+   .barra{
+    position:relative;
+    transition: .4s all;
+    z-index: 1;  
+    }
+
+.barra:hover{
+    width: 40%;
+}
+
+.barra:hover h2{
+    padding: 20px;
+    font-size: 15px;
+}
+
+.foto{
+    margin: 0px 20px ;
+    height: 100px;
+    width: 100px;
+    display: none;
+}
+
+.barra:hover img{
+    display: block;
+    height: 80px;
+    width: 80px;
+}
+
+.barra:hover summary{
+    font-size: 14px;
+    padding: 1rem;
+}
+
+.barra .logo2{
+    margin: 180px 20px ;
+}
+
+.barra:hover .salir{
+    font-size: 18px;
+    margin: 10px;
+    padding: 0.5rem;
+    margin-top: 400px;
+
+}
+
+/*footer*/
+.piePagina2{
+    font-size: 14px;
+    padding-top: 1rem;
+}
+
+.condiciones{
+    font-size: 12px;
+}
+
+.terminos{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    text-align: center;
+    gap:1rem;
+    font-size: 14px;
+}
+
+.copy{
+    float: right;
+    display: flex;
+    height: 30px;
+    margin: -7px;
+}
+
+/*animaciones emojis*/
+
+/*estilos emoji sorprendido*/
+
+.contenedor{
+    height: 80px;
+    width: 80px;
+    cursor: pointer;
+    position: relative;
+}
+
+.contenedor .cara{
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    background: linear-gradient(rgb(231,204,134),#feca45,#feca45);
+    box-shadow: 0 0 5px #000;
+    inset: 0 0 10px #f1952d;
+}
+
+.contenedor .cara .cont-ojos{
+    top:-20px; /*SEPARA OJOS DE LA CABEZ*/
+    height: 110px;
+    width: 80%;
+}
+
+.cont-ojos .ojos{
+    height: 40px;
+    width: 40px;
+    box-shadow: inset0 0 5px #000;
+}
+
+.ojos .ocular{
+    height: 10px;
+    width: 10px;
+}
+
+.boca{
+    height: 20px;
+    width:20px;
+    margin: -54px auto;
+    
+}
+
+.cara:hover .ocular{
+    transform: translateY(-15px);
+}
+
+
+/*estilos emoji muerto*/
+
+.contenedor4{
+    height: 80px;
+    width: 80px; 
+}
+
+.contenedor4 .cara4{
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    background: linear-gradient(rgb(231,204,134),#feca45,#feca45);
+    box-shadow: 0 0 5px #000;
+    inset: 0 0 10px #f1952d;
+}
+
+.contenedor4 .cara4 .cont-ojos4{
+    top:-20px; /*SEPARA OJOS DE LA CABEZ*/
+    height: 110px;
+    width: 80%;
+}
+
+.cont-ojos4 .ojos4{
+    height: 40px;
+    width: 40px;
+    box-shadow: inset0 0 5px #000;
+}
+
+.ojos4 .ocular4{
+    height: 10px;
+    width: 10px;
+}
+
+.boca4{
+    height: 20px;
+    width:20px;
+    margin: -54px auto;
+}
+
+/*estilos emoji cerrando ojo*/
+
+.contenedor2{
+    height: 80px;
+    width: 80px;
+}
+
+.contenedor2 .cara2{
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    background: linear-gradient(rgb(231,204,134),#feca45,#feca45);
+    box-shadow: 0 0 5px #000;
+    inset: 0 0 10px #f1952d;
+}
+
+.contenedor2 .cara2 .cont-ojos2{
+    top:-20px; /*SEPARA OJOS DE LA CABEZ*/
+    height: 110px;
+    width: 80%;
+}
+
+.cont-ojos2 .ojos2{
+    height: 40px;
+    width: 40px;
+    box-shadow: inset0 0 5px #000;
+}
+
+.ojos2 .ocular2{
+    height: 10px;
+    width: 10px;
+}
+
+.boca2{
+    height: 20px;
+    width:30px;
+    margin: -55px auto;
+    border-bottom: 12px solid #000;
+}
+
+.cara2:hover .boca2{
+    transform: scale(2);
+}
+
+
+/*estilos emoji encantado*/
+
+.contenedor3{
+    height: 80px;
+    width: 80px;
+}
+
+.contenedor3 .cara3{
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    background: linear-gradient(rgb(231,204,134),#feca45,#feca45);
+    box-shadow: 0 0 5px #000;
+    inset: 0 0 10px #f1952d;
+}
+
+.contenedor3 .cara3 .cont-ojos3{
+    top:-20px; /*SEPARA OJOS DE LA CABEZ*/
+    height: 110px;
+    width: 80%;
+}
+
+.cont-ojos3 .ojos3{
+    height: 40px;
+    width: 40px;
+    box-shadow: inset0 0 5px #000;
+}
+
+.ojos3 .ocular3{
+    height: 10px;
+    width: 10px;
+    background-color: red;
+    transform: rotate(45deg);
+    box-shadow: 3px 3px 10px #f20044;
+    
+}
+
+.ocular3::before{
+    height: 10px;
+    width: 10px;
+    background-color: red;
+    right: 50%;
+    border-radius: 50%;
+    box-shadow:  3px 3px 10px #f20044;
+}
+
+.ocular3::after{
+    content: "";
+    position: absolute;
+    height: 10px;
+    width: 10px;
+    background-color: red;
+    top: -50%;
+    border-radius: 50%;
+    box-shadow:  3px 3px 10px #f20044;
+}
+
+.boca3{
+    height: 20px;
+    width: 40px;
+    margin: -55px auto;
+    border-bottom: 5px solid #000;
+}
+
+.cara3:hover .ocular3{
+    transform: rotate(45deg) scale(1.10);
+}
+
+.reacciones{
+    font-size: 7px;
+    margin-top: -135px;
+    z-index: 3;
+}
+
+
+/* calificaciones emojis*/
+
+.calificacion1{
+    position:relative;
+    margin-left: 40px;
+    margin-top: -10px;
+}
+
+.calificacion2{
+    position: relative;
+    right: 40px;
+    margin-top: -10px;
+}
+
+.calificacion3{
+    margin-left: 10px;
+    margin-top: 18px;
+}
+
+.calificacion4{
+    position: relative;
+    right: 15px;
+    margin-top: 18px;
+}
+
+}
+

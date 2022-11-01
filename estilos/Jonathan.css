@@ -32,9 +32,8 @@ verde: #26FF02*/
     height: 14rem;
 
 }
-
 header{
-    grid-area: 1/1/2/3;
+    grid-area: 1 / 1 / 2 / 2;
 }
 header h1{
     position:absolute; 
@@ -49,7 +48,7 @@ header h1{
 }
 
 
-.barra{
+.barra1{
     font-family:'Playfair Display', serif; 
     width: 10%;
     height: 9%;
@@ -59,33 +58,33 @@ header h1{
   
 }
 
-.barra ul{
+.barra1 ul{
     list-style: none; 
     padding-top: 8rem;
 }
-.barra li{
+.barra1 li{
     transition: .3s all;
 }
 
 
-.barra summary{
+.barra1 summary{
     text-align: center;
     transition: .4s all;
     font-size: 0px;
 }
 
-.barra ul li{
+.barra1 ul li{
     text-align: left; /*alinear los textos dentro del menu*/
 
 }
 
-.barra ul li details{
+.barra1 ul li details{
     padding: 7px;
     padding-bottom: 10px; /*Separa la distancia entre diplomados, horario y notas*/
     list-style-type: none;
 }
 
-.barra a{
+.barra1 a{
     text-align: center;
     text-decoration: none;
     list-style: none;
@@ -93,12 +92,12 @@ header h1{
     font-size: 0px;
 }
 
-.barra img{
+.barra1 img{
     padding-top: 30px;
     padding-left: 10px;
 }
 
-.barra h2{
+.barra1 h2{
     text-align: center;
     color: #fff;
     padding: 7px;
@@ -224,19 +223,16 @@ details > summary:first-of-type {
     cursor: pointer;
 }
 
-
 /*Footer*/
-
 
 .footer{
     font-family: 'Playfair Display', serif;
     color:#fff;
     background: #000;
     padding: 30px;
-    grid-area: 3/1/4/3;
+    grid-area: 4 / 1 / 5 /2;
 
 }
-
 .piePagina1{
     display: flex;
     list-style-type: none;
@@ -291,15 +287,13 @@ details > summary:first-of-type {
     height: 30px;
 }
 
-
-
 /*animaciones emojis*/
 .emojis{
+    grid-area: 2 / 1 / 3 / 2;
     display:flex;
-    flex-wrap: wrap;
+    flex-direction: row;
     justify-content: center;
     gap: 5rem;
-    margin-top: 8rem;
 }
 
 

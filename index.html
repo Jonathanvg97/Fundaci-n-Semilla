@@ -13,6 +13,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&display=swap"rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@800&display=swap" rel="stylesheet">
   </head>
   <body>
     <header>
@@ -22,13 +23,11 @@
       <h1 class="principal">BIENVENIDO! <br>FUNDACIÓN SEMILLA</h1>
       
       <nav>
-        <div class="barra">
+        <div class="barra1">
           <h2>Menu<img class="hamburguesa" src="/Fundaci-n-Semilla/img/menu.png" alt="" /></h2>
-         <img class="foto" src="/Fundaci-n-Semilla/img/avatar.png" alt="">
-         <span class="nombreDocente">Juliana Alvaréz <br> Docente</span>
-        
+        <img class="foto" src="/Fundaci-n-Semilla/img/avatar.png" alt="">
+        <span class="nombreDocente">Juliana Alvaréz <br> Docente</span>
           <ul> 
-         
             <li>
               <details>
                 <summary class="cursos">
@@ -38,7 +37,6 @@
                     <li><a href=""> Inv. Ambiental</a></li>
                     <li><a href=""> Der. Ambiental </a></li>
                     <li><a href=""> Sostenibildad Ambiental </a></li>
-                   
                 </p>
               </details>
             </li>
@@ -75,349 +73,327 @@
         </div>
       </nav>
     </header>
-
-
     <main>
       <!--Seccion A-->
-       
-      <div>
-        <input type="text" name="email" placeholder="Nombre Estudiante" class="search">
-        <button class="join">BUSCAR</button>
-    </div>
-    <!--Seccion A-->
-    <!--Container general--->
-    <section class="sectionA">
-        <!--Container 1 Profile-->
-        <section class="profile">
-            <img src="./img/perfil1.png" alt="" class="photo">
-            <div class="selec">
-                <label for="Diplomados"><b>Diplomados cursando</b></label>
-                <select name="Diplomados" id="Diplomados">
-                    <option value="Diplomado1">D. Sostenibilidad Ambiental</option>
-                    <option value="Diplomado2">D. Derecho Ambiental</option>
-                </select>
-            </div>
-            <div class="info">
-                <p><b>Nombre:</b>&nbsp; Alejandra <br><b>Apellidos:</b> &nbsp;Pérez Casas <br><b>Edad</b> &nbsp;28 años <br><b>Sexo:</b> &nbsp;Femenino <br><b>E-mail:</b> &nbsp;aleja03@gmail.com</p> 
-            </div>   
-        </section> 
-        <!--Container Progress--> 
-        <section class="progress">
-            <div class="pa">
-                <h4>Progreso diplomado</h4><span class="gray">Cuanto falta para finalizar el diplomado?</span></p> 
-            </div>
-            <!--GRAPHIC PROGRESS-->
-            <div class="pb">
-                <svg width="200" height="200" id="pb3">
-                    <defs><linearGradient id="pb1" x1="0%" y1="0%"
-                    x2="50%" y2="0%">
-                        <stop offset="0%" style="stop-color:rgb(76, 253, 182);stop-opacity:1"/><stop offset="100%" style="stop-color:rgb(0, 148, 88);stop-opacity:1"/></linearGradient></defs>
-                    <circle cx="100" cy="100" r="100" fill="url(#pb1)">
-                    </circle>
-                    <circle class="pb2" cx="100" cy="100" r="50" ></circle>
-                </svg>
-            </div>
-        </section> 
-        <!--Container Personal Avarage--> 
-        <section class="avarage">
-            <div class="a1">
-                <p>Promedio Estudiante</p><span class="gray">Porcentaje de entregas individuales</span></p> 
-            </div>
-            <!--GRAPHIC PERSONAL AVARAGE-->
-            <div class="a2">
-                <svg width="400" height="100">
-                    <rect class="a2a" width="400" height="100" x="0" y="0" rx="10px" ry="10px"></rect>
-                    <rect class="a2b" width="210" height="100" x="0" y="0" rx="15px" ry="15px"></rect>
-                </svg>
-            </div>
-        </section>
-        <!--Container Global Avarage--> 
-        <section class="global">
-            <div class="g1">
-                <p>Promedio Curso</p><span class="gray">Porcentaje entregas grupal</span></p> 
-            </div>
-            <!--GRAPHIC PERSONAL AVARAGE-->
-            <div class="g2">
-                <svg width="400" height="100">
-                    <rect class="a2a" width="400" height="100" x="0" y="0" rx="10px" ry="10px"></rect>
-                    <rect class="a2b" width="270" height="100" x="0" y="0" rx="15px" ry="15px"></rect>
-                </svg>
-            </div>
-        </section>
-        <!--Container Schedule-->
-        <section class="schedule">
-            <div class="s1">
-                <h4>Calendario de entregas semanal</h4><span class="gray">Actividades que el estudiante tiene programadas</span></p> 
-            </div>
-            <!--Schedule-->
-            <table class="s2">
-                <thead>
-                    <tr>
-                        <td class="s2a"><h4>Lunes</h4></td>
-                        <td class="s2b"><h4>Martes</h4></td>
-                        <td class="s2a"><h4>Miercoles</h4></td>
-                         <td class="s2b"><h4>Jueves</h4></td>
-                            <td class="s2a"><h4>Viernes</h4></td>
-                            <td class="s2b"><h4>Sabado</h4></td>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td class="s2b"><input type="text" name="" id="sc"></td>
-                            <td class="s2a"><input type="text" name="" id="sc1"></td>
-                            <td class="s2b"><input type="text" name="" id="sc"></td>
-                            <td class="s2a"><input type="text" name="" id="sc1"></td>
-                            <td class="s2b"><input type="text" name="" id="sc"></td>
-                            <td class="s2a"><input type="text" name="" id="sc1"></td>
-                        </tr>
-                    </tbody>
-                    <tfoot></tfoot>
-                </table>
-                <div class="s3">
-                    <div class="s3a">
-                        <svg width="170" height="170" class="s3a3">
-                            <line class="s3a1" x1="20" y1="20" x2="150" y2="150"></line>
-                            <line class="s3a2" x1="20" y1="150" x2="150" y2="20" >
-                        </svg>
-                        <h4>&nbsp; &nbsp;No entrego</h4>
-                    </div>
-                    <div class="s3b">
-                        <svg width="170" height="170" class="s3a3">
-                            <line class="s3b1" x1="50" y1="150" x2="150" y2="10"></line>
-                            <line class="s3b2" x1="50" y1="150" x2="20" y2="120" >
-                        </svg>
-                        <h4>&nbsp; &nbsp;Entrego</h4>
-                    </div>  
-                </div>    
-            </section>
-        </section>
+      <section class="first">
+        <div class="f1">
+          <input type="text" name="email" placeholder="Nombre Estudiante" class="search">
+          <button class="join">BUSCAR</button>
+        </div>
+        <div class="f2">
+          <h2>DIPLOMADO SOSTENIBILIDAD AMBIENTAL</h2>
+        </div>    
+      </section>
+      <!--Seccion A-->
+      <!--Container general--->
+      <section class="sectionA">
+          <!--Container 1 Profile-->
+          <section class="profile">
+              <img src="./img/perfil1.png" alt="" class="photo">
+              <div class="selec">
+                  <label for="Diplomados"><b>Diplomados cursando</b></label>
+                  <select name="Diplomados" id="Diplomados">
+                      <option value="Diplomado1">D. Sostenibilidad Ambiental</option>
+                      <option value="Diplomado2">D. Derecho Ambiental</option>
+                  </select>
+              </div>
+              <div class="info">
+                  <p><b>Nombre:</b>&nbsp; Alejandra <br><b>Apellidos:</b> &nbsp;Pérez Casas <br><b>Edad</b> &nbsp;28 años <br><b>Sexo:</b> &nbsp;Femenino <br><b>E-mail:</b> &nbsp;aleja03@gmail.com</p> 
+              </div>   
+          </section> 
+          <!--Container Progress--> 
+          <section class="progress">
+              <div class="pa">
+                  <h4>Progreso diplomado</h4>
+                  <span class="gray">Cuanto falta para finalizar el diplomado?</span>
+              </div>
+              <!--GRAPHIC PROGRESS-->
+              <div class="pb">
+                  <svg width="200" height="200" id="pb3">
+                      <defs><linearGradient id="pb1" x1="0%" y1="0%"
+                      x2="50%" y2="0%">
+                          <stop offset="0%" style="stop-color:rgb(76, 253, 182);stop-opacity:1"/><stop offset="100%" style="stop-color:rgb(0, 148, 88);stop-opacity:1"/></linearGradient></defs>
+                      <circle cx="100" cy="100" r="100" fill="url(#pb1)">
+                      </circle>
+                      <circle class="pb2" cx="100" cy="100" r="50" ></circle>
+                  </svg>
+              </div>
+          </section> 
+          <!--Container Personal Avarage--> 
+          <section class="avarage">
+              <div class="a1">
+                  <p>Promedio Estudiante</p><span class="gray">Porcentaje de entregas individuales</span></p> 
+              </div>
+              <!--GRAPHIC PERSONAL AVARAGE-->
+              <div class="a2">
+                  <svg width="400" height="100">
+                      <rect class="a2a" width="400" height="100" x="0" y="0" rx="10px" ry="10px"></rect>
+                      <rect class="a2b" width="210" height="100" x="0" y="0" rx="15px" ry="15px"></rect>
+                  </svg>
+              </div>
+          </section>
+          <!--Container Global Avarage--> 
+          <section class="global">
+              <div class="g1">
+                  <p>Promedio Curso</p><span class="gray">Porcentaje entregas grupal</span></p> 
+              </div>
+              <!--GRAPHIC PERSONAL AVARAGE-->
+              <div class="g2">
+                  <svg width="400" height="100">
+                      <rect class="a2a" width="400" height="100" x="0" y="0" rx="10px" ry="10px"></rect>
+                      <rect class="a2b" width="270" height="100" x="0" y="0" rx="15px" ry="15px">
+                      </rect>
+                  </svg>
+              </div>
+          </section>
+          <!--Container Schedule-->
+          <section class="schedule">
+              <div class="s1">
+                  <h4>Calendario de entregas semanal</h4><span class="gray">Actividades que el estudiante tiene programadas</span></p> 
+              </div>
+              <!--Schedule-->
+              <table class="s2">
+                  <thead>
+                      <tr>
+                          <td class="s2a"><h4>Lunes</h4></td>
+                          <td class="s2b"><h4>Martes</h4></td>
+                          <td class="s2a"><h4>Miercoles</h4></td>
+                          <td class="s2b"><h4>Jueves</h4></td>
+                              <td class="s2a"><h4>Viernes</h4></td>
+                              <td class="s2b"><h4>Sabado</h4></td>
+                          </tr>
+                      </thead>
+                      <tbody>
+                          <tr>
+                              <td class="s2b"><input type="text" name="" id="scc"></td>
+                              <td class="s2a"><input type="text" name="" id="sc1"></td>
+                              <td class="s2b"><input type="text" name="" id="scc"></td>
+                              <td class="s2a"><input type="text" name="" id="sc1"></td>
+                              <td class="s2b"><input type="text" name="" id="scc"></td>
+                              <td class="s2a"><input type="text" name="" id="sc1"></td>
+                          </tr>
+                      </tbody>
+                      <tfoot></tfoot>
+                  </table>
+                  <div class="s3">
+                      <div class="s3a">
+                          <svg width="170" height="170" class="s3a3">
+                              <line class="s3a1" x1="20" y1="20" x2="150" y2="150"></line>
+                              <line class="s3a2" x1="20" y1="150" x2="150" y2="20" >
+                          </svg>
+                          <h4>&nbsp; &nbsp;No entrego</h4>
+                      </div>
+                      <div class="s3b">
+                          <svg width="170" height="170" class="s3a3">
+                              <line class="s3b1" x1="50" y1="150" x2="150" y2="10"></line>
+                              <line class="s3b2" x1="50" y1="150" x2="20" y2="120" >
+                          </svg>
+                          <h4>&nbsp; &nbsp;Entrego</h4>
+                      </div>  
+                  </div>    
+              </section>
+          </section>
         <!--Seccion B-->
-        <!--Triangulos-->
-        <section class="sectionB">
-            <svg width="280" height="280">
-                <polygon points="80 230, 180 30, 280 230" fill="#FF0404">
-                </polygon>
-            </svg>
-            <svg width="280" height="280">
-                <polygon points="80 230, 180 30, 280 230" fill="#CF7D1D">
-                </polygon>
-            </svg>
-            <svg width="280" height="280">
-                <polygon points="80 230, 180 30, 280 230" fill="#F2F60E">
-                </polygon>
-            </svg>
-            <svg width="280" height="280">
-                <polygon points="80 230, 180 30, 280 230" fill="#009458">
-                </polygon>
-            </svg>
-        </section>
-
-      <!--Seccion B-->
-
-      <section class="b">
-        <div>
-            <div>
-                <div>
-                    <h2>DIPLOMADO SOSTENIBILIDAD AMBIENTAL</h2>
-                    <div class="ancho">
-                        <div class="wrapper">
-                            <div>
-                                <div class="line"></div>
-                                <div class="number n0">0%</div>
-                                <div class="number n25">25%</div>
-                                <div class="number n90">50%</div>
-                                <div class="number n75">75%</div>
-                                <div class="number n180">100%</div>
-                                <div class="circle2"></div>
-                                <div class="circle1"></div>
-                            </div>
-                            <input type="number" min="0" max="100" value="0">
-                        </div>
-                        <div>
-                            <DIV class="lista-del-medidor"> 
-                                <UL class="significado-de-los-volores" >
-                                    <LI class="uno">MAL</LI>
-                                    <LI class="dos">REGULAR</LI>
-                                    <LI class="tres">BIEN</LI>
-                                    <LI class="cuatro">EXELENTE</LI>
-                                </UL>
-                            </DIV>
-                        </div>
-                    </div>
-                </div>
-                <h5>comentanos por que tu calificacion</h5>
-                <input type="text" name="" id="comentarios">
+        <section class="b">
+          <div class="ancho">
+            <div class="an1">
+              <h4>ESTADO DE ANIMO DEL ESTUDIANTE</h4>
             </div>
-        </div>
-        <div>
-        <div class="titulos">
-            <div class="titulo-uno">
-                <h3>ASISTENCIA</h3>
-                <H4>promedio semanal</H4>
-            </div>    
-            <div>
-                <h3>EVALUANDO AL DOCENTE </h3>
-                <H4>consideraciones del estudiante</H4>
+            <div class="wrapper">
+              <div>
+                <div class="line"></div>
+                <div class="number n0">0%</div>
+                <div class="number n25">25%</div>
+                <div class="number n90">50%</div>
+                <div class="number n75">75%</div>
+                <div class="number n180">100%</div>
+                <div class="circle2"></div>
+                <div class="circle1"></div>
+              </div>
+                <input type="number" min="0" max="100" value="0">
+                </div>
+                <div class="w1">
+                  <ul class="significadoValores" > 
+                    <li><img class="triangulo1" src="clip-path: polygon(51% 0, 33% 100%, 73% 100%);" alt=""></li> 
+                    <li class="uno">MAL</li>
+                    
+                    <li><img class="triangulo2" src="clip-path: polygon(51% 0, 33% 100%, 73% 100%);" alt=""></li>
+                    <li class="dos">REGULAR</li>  
+                    
+                    <li><img class="triangulo3" src="clip-path: polygon(51% 0, 33% 100%, 73% 100%);" alt=""></li>  
+                    <li class="tres">BIEN</li>
+
+                    <li><img class="triangulo4" src="clip-path: polygon(51% 0, 33% 100%, 73% 100%);" alt=""></li>  
+                    <li class="cuatro">EXCELENTE</li>
+                  </ul>
+                </div>
+            </div>  
+          </div>  
+                <section class="sc">    
+                  <div id="comentarios">
+                    <p>Me estan gustando bastante esta clase, estoy aprendiendo bastante</p>
+                  </div>  
+                </section>
+          </div>
+        <section class="scd">
+          <div class="titulo-uno">
+            <h4>ASISTENCIA</h4>
+            <span class="gray">Promedio Semanal</span>
+          </div>    
+          <section class="tabla-de-asistencia">
+          <div class="board">
+              <div class="sub_board">
+                  <div class="sep_board"></div>
+                  <div class="cont_board">
+                      <div class="graf_board">
+                          <div class="barra">
+                              <div class="sub_barra b1">
+                                  <div class="tag_g">35%</div>
+                                  <div class="tag_leyenda">semana 1</div>
+                              </div>
+                          </div>
+                          <div class="barra">
+                              <div class="sub_barra b2">
+                                  <div class="tag_g">45%</div>
+                                  <div class="tag_leyenda">semana 2</div>
+                              </div>
+                          </div>
+                          <div class="barra">
+                              <div class="sub_barra b3">
+                                  <div class="tag_g">55%</div>
+                                  <div class="tag_leyenda">semana 3</div>
+                              </div>
+                          </div>
+                          <div class="barra">
+                              <div class="sub_barra b4">
+                                  <div class="tag_g">75%</div>
+                                  <div class="tag_leyenda">semana 4</div>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="tag_board">
+                          <div class="sub_tag_board">
+                              <div>100</div>
+                              <div>90</div>
+                              <div>80</div>
+                              <div>70</div>
+                              <div>60</div>
+                              <div>50</div>
+                              <div>40</div>
+                              <div>30</div>
+                              <div>20</div>
+                              <div>10</div>
+                          </div>
+                      </div>
+                </div>
+                </div>    
+              </div>
+            </section>  
+            <div class="cal1">
+              <h4>EVALUANDO AL DOCENTE </h4>
+              <span class="gray">Consideraciones del estudiante</span>
             </div> 
-        </div>
-        <section class="tabla-de-asistencia">
-        <div class="board">
-            <div class="sub_board">
-                <div class="sep_board"></div>
-                <div class="cont_board">
-                    <div class="graf_board">
-                        <div class="barra">
-                            <div class="sub_barra b1">
-                                <div class="tag_g">35%</div>
-                                <div class="tag_leyenda">semana 1</div>
-                            </div>
-                        </div>
-                        <div class="barra">
-                            <div class="sub_barra b2">
-                                <div class="tag_g">45%</div>
-                                <div class="tag_leyenda">semana 2</div>
-                            </div>
-                        </div>
-                        <div class="barra">
-                            <div class="sub_barra b3">
-                                <div class="tag_g">55%</div>
-                                <div class="tag_leyenda">semana 3</div>
-                            </div>
-                        </div>
-                        <div class="barra">
-                            <div class="sub_barra b4">
-                                <div class="tag_g">75%</div>
-                                <div class="tag_leyenda">semana 4</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="tag_board">
-                        <div class="sub_tag_board">
-                            <div>100</div>
-                            <div>90</div>
-                            <div>80</div>
-                            <div>70</div>
-                            <div>60</div>
-                            <div>50</div>
-                            <div>40</div>
-                            <div>30</div>
-                            <div>20</div>
-                            <div>10</div>
-                        </div>
-                    </div>
-               </div>
-              </div>    
-            </div>
-            <div>
-                <div>
+            <section class="cal">
                     <div class="boton"> <!-- Checkbox -->
-                         <input type="checkbox" name=" evaluacionDocente" id="encender" class="boton1"> <!-- Botón --> <label for="encender" class="boton2"></label>
+                          <input type="checkbox" name=" evaluacionDocente" id="encender" class="boton1"> <!-- Botón --> <label for="encender" class="boton2"></label>
                     </div> 
-                </div>
-                <div class="parrafo">
-                    <h3>me alegra las clases con este docente.</h3>
-                </div>
-            </div>
-            </section>
-    
-            <div>
-                <h4>en este espacio,podras incentivar o brindar un comentario a tu estudiante frente algun entregable</h4>
-            </div>
-            <div>
-                <div class="fin">
-                    <h3>feedback  <input type="text" name="" id="comentarios-uno"></h3>
-                </div>
-            </div>
-    
+                  <div class="par">
+                      <p>Me alegra las clases con este docente.</p>
+                  </div>
+              </section>
         </section>
-
-
-
-     <!--emoji muerto-->
-     <div class="emojis">
-
-          <div class="contenedor4">
-            <div class="cara4">
-              <div class="cont-ojos4">
-                <div class="ojos4">
-                  <div class="ocular4"></div>
+        <section class="emo">
+          <div class=" emo1">
+                  <span class="gray1">En este espacio, podrás incentivar  o brindar un comentario a tu estudiante frente a algún entregable</span>
+          </div>
+                        <!--emoji muerto-->
+          <div class="emojis">
+                <div class="contenedor4">
+                  <div class="cara4">
+                    <div class="cont-ojos4">
+                      <div class="ojos4">
+                        <div class="ocular4"></div>
+                      </div>
+                      <div class="ojos4">
+                        <div class="ocular4"></div>
+                      </div>
+                  </div>
+                      <div class="boca4">
+                      
+                    </div>
+                  </div>
                 </div>
-                <div class="ojos4">
-                  <div class="ocular4"></div>
+
+
+            <!--emoji sorprendido-->
+              <div class="contenedor">
+                <div class="cara">
+                  <div class="cont-ojos">
+                    <div class="ojos">
+                      <div class="ocular"></div>
+                    </div>
+                    <div class="ojos">
+                      <div class="ocular"></div>
+                    </div>
+                </div>
+            <div class="boca">
+                    
+                  </div>
                 </div>
             </div>
-                <div class="boca4">
+        
+
+            <!--emoji picano el ojo-->
+            <div class="contenedor2">
+              <div class="cara2">
+                <div class="cont-ojos2">
+                  <div class="ojos2">
+                    <div class="ocular2"></div>
+                  </div>
+                  <div class="ojos2">
+                    <div class="ocular2"></div>
+                  </div>
+              </div>
+                  <div class="boca2">
+                  
+                </div>
+              </div>
+          </div>
+
+          <!--emoji encantando-->
+          <div class="contenedor3">
+            <div class="cara3">
+              <div class="cont-ojos3">
+                <div class="ojos3">
+                  <div class="ocular3"></div>
+                </div>
+                <div class="ojos3">
+                  <div class="ocular3"></div>
+                </div>
+            </div>
+                <div class="boca3">
                 
               </div>
             </div>
-        </div>
-    
-
-        <!--emoji sorprendido-->
-          <div class="contenedor">
-            <div class="cara">
-              <div class="cont-ojos">
-                <div class="ojos">
-                  <div class="ocular"></div>
-                </div>
-                <div class="ojos">
-                  <div class="ocular"></div>
-                </div>
-            </div>
-                <div class="boca">
-                
-              </div>
             </div>
         </div>
-     
-
-        <!--emoji picano el ojo-->
-        <div class="contenedor2">
-          <div class="cara2">
-            <div class="cont-ojos2">
-              <div class="ojos2">
-                <div class="ocular2"></div>
+        <!--emoji calificaciones emojis-->
+        <div class="reacciones">
+            <span class="calificacion1">Molesto</span>
+            <span class="calificacion2">Me sorprende</span>
+            <span class="calificacion3">Puede ser mejor</span>
+            <span class="calificacion4">Me encanta</span>
+        </div>
+        </section>
+        <section class="fin1">
+              <div>
+                  <div class="fin">
+                      <span class="fin2">Feedback</span> 
+                      <input type="text" name="" class="comentarios-uno" placeholder="Comentario">
+                  </div>
               </div>
-              <div class="ojos2">
-                <div class="ocular2"></div>
-              </div>
-          </div>
-              <div class="boca2">
-              
-            </div>
-          </div>
-      </div>
       
-
-
-      <!--emoji encantando-->
-      <div class="contenedor3">
-        <div class="cara3">
-          <div class="cont-ojos3">
-            <div class="ojos3">
-              <div class="ocular3"></div>
-            </div>
-            <div class="ojos3">
-              <div class="ocular3"></div>
-            </div>
-        </div>
-            <div class="boca3">
-            
-          </div>
-        </div>
-        </div>
-    </div>
-    
-    
-     <!--emoji calificaciones emojis-->
-    <div class="reacciones">
-        <span class="calificacion1">Molesto</span>
-        <span class="calificacion2">Me sorprende</span>
-        <span class="calificacion3">Puede ser mejor</span>
-        <span class="calificacion4">Me encanta</span>
-    </div>
-
-
+        </section>
 
     </main>
 

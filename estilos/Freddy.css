@@ -1,51 +1,75 @@
-/*font-family: 'Playfair Display', serif;*/
-/*Colores
-verde barra lateral #009458 RBG( 0 - 148 - 88 )  rgba(0, 148, 88, 1)
-verde clarito #69BF97 RBG( 105 - 191 - 151 ) rgba(105, 191, 151, 1)
-blanco #FFFFFF  RBG( 255 - 255 - 255)  rgba(255, 255, 255, 1)*/
-
-/*Colores
-rojo: #ff303
-naranja: #FF3D00
-amarillo: #F2F60E
-verde claro: #B4E944
-verde: #26FF02*/
-
 *{
     margin: 0px;
     box-sizing: border-box;
     padding: 0px;
 }
-
 .b{
     grid-area: 2 / 2 / 3 / 3;
-}
-
-body{
-    background: #d9d9d9;
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.5fr auto auto 1fr 1fr;
+    padding: 50pt 50pt;
+    width: 100%;
 }
-
+/*Grafica estado animo*/
 .wrapper {
+    grid-area: 2 / 1 / 3 / 2;
     text-align:center;
     width:300px;
     height:200px;
-    position:relative;
 }
-
-.lista-del-medidor{
-    text-align: right;
-    width: 100%;
-    margin: 30px;
+.an1{
+    grid-area: 1 / 1 / 2 / 2;
 }
-
-.ancho{
-    width: 100%;
+/*ubi triangulos*/
+.w1{
+    grid-area: 3 / 1 / 4 / 2 ;
+}
+.significadoValores{
+    list-style: none;
     display: flex;
-    text-align: right;
+    flex-direction: row;
+    justify-content: center;
+    background-color:#D9D9D9;
+    font-family: 'Playfair Display';
+    }
+    .triangulo1{
+        width:100px;
+        height:40px;
+        clip-path: polygon(51% 0, 33% 100%, 73% 100%);
+        background-color: red ;
+    }
+    .triangulo2{
+        width:100px;
+        height:40px;
+        clip-path: polygon(51% 0, 33% 100%, 73% 100%);
+        background-color: orangered;
+    }
+    .triangulo3{
+        width:100px;
+        height:40px;
+        clip-path: polygon(51% 0, 33% 100%, 73% 100%);
+        background-color: yellow;
+    }
+    .triangulo4{
+        width:100px;
+        height:40px;
+        clip-path: polygon(51% 0, 33% 100%, 73% 100%);
+        background-color: green;
+    }
+    
+/*Contenedor estados de animo*/
+.ancho{
+    grid-area: 1 / 1 / 2 / 2;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    justify-items: center;
+    align-items: center;
 }
+/*Comentarios*/
+
 
 li.uno{
     list-style-image: url(Fundaci-n-Semilla/img/triangulo.png);
@@ -55,6 +79,9 @@ li.uno{
 h2{
     animation-duration: 3s; /*------tiempo de duracion de la animacion------*/
     animation-name: titulo-diplomados;
+    font-family:'Playfair Display', serif;
+    font-size: 24pt;
+    font-weight: bold;
 }
 
 @keyframes titulo-diplomados{/*---------asi se describen los fotogramas de la animacion----------*/
@@ -161,29 +188,65 @@ h2{
 }
 
 #comentarios{
-    display: flex;
-    flex-direction: column;
-    border-radius: 10px;
-    height: 60px;
-    width: 40%;
+    grid-area: 2 / 1 / 3 / 3;
+    font-family:'Playfair Display', serif;
+    font-size: 18pt;
+    line-height: 2;
+    border-radius: 20px;
+    border-color: #b0cfc1 ;
+    height: 100%;
+    width: 100%;
     background: #b0cfc1;
 }
 
-.parrafo{
+.par{
+    grid-area: 2 / 1 / 3 / 2;
+    font-family:'Playfair Display', serif;
+    font-size: 18pt;
+    line-height: 2;
     background: #b0cfc1;
-    width: 40%;
-    height: 20%;
+    width: 100%;
     text-align: center;
-    margin-left: 20%;
+    padding: 0 20pt;
     border-radius: 10px;
 }
 
 :root { /*:root puede ser útil para declarar variables CSS globales:*/ 
     --color-green: #00a878; --color-red: #fe5e41; --color-button: #fdffff; --color-black: #000;
  } 
+/*Container comentario*/ 
+.sc{
+    grid-area: 2 / 1 / 3 / 2;
+    text-align: center;
+    padding: 20pt 0pt;
+}
+/*Container asistencia y eva docente*/
+.scd{
+    grid-area: 3 / 1 / 4 / 2;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0.3fr 1fr ;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20pt 0pt;
+} 
+/*Container Eva. Docente*/
+.cal{
+    grid-area: 2 / 2 / 3 / 3;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
+    padding-left: 20pt ;
+}
+.cal1{
+    grid-area: 1 / 2 / 2 / 3;
+}
 .boton  { 
-     display: flex;
-      float: left; 
+    grid-area: 1 / 1 / 2 / 2;
+    padding: 20pt 0pt;
+    margin-top: -50pt;
+
 }
 .boton .boton1 {
       display: none;
@@ -203,40 +266,65 @@ h2{
      background-color: var(--color-green);
 } .boton .boton1:checked + .boton2:before { 
     transform: translateX(2rem);
- } 
-
-.fin{
-    border-radius: 10px;
-    height: 100px;;
-    width: 50%;
-    background: #019570;
-    text-align: left;
-    margin: 25px;
+ }
+.emo{
+    grid-area: 4 / 1 / 5 / 2;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.8fr 1fr;
+    padding: 80pt 0pt;
+} 
+.gray1{
+    font-family: 'Playfair Display', serif;
+    font-size: 18pt;
+    color: #706666;
+    font-weight: 600;
 }
-
-#comentarios-uno{
-    width: 80%;
-    margin: 10px;
-    height: 70px;
+.emo1{
+    grid-area: 1 / 1 / 2 / 2;
+}
+.fin1{
+    grid-area: 5 / 1 / 6 / 2;
+}
+.fin{
+    display: grid;
+    grid-template-columns: 0.3fr 1fr;
+    grid-template-rows: 1fr;
+    border-radius: 10px;
+    height: 100%;
+    width: 100%;
+    background: #019570;
+    border-radius: 10pt;
+    text-align: left;
+    padding: 20pt 0pt;
+}
+.fin2{
+    grid-area: 1 / 1 /2 /2;
+    font-weight: bold;
+    font-size: 20pt;
+    text-align: center;
+    font-family:'Playfair Display', serif;
+}
+.comentarios-uno{
+    grid-area: 1 / 2 / 2 /3;
+    width: 95%;
+    height: 100px;
     background: #b0cfc1;
+    border-color: #b0cfc1;
+    border-radius: 20px;
+    text-align: center;
 }
 /*-----------------------segunda parte de la seccion b----------------------------*/
 .tabla-de-asistencia{
+    grid-area: 2 / 1 / 3 / 2;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     grid-template-rows: 1fr;
 }
-
-.titulos{
-    display: flex;
-}
-
 .titulo-uno{
-    margin-right: 300px;
-    margin-left: 40px;
+    grid-area: 1 / 1 / 2 / 2;
 }
-
-  .board{
+.board{
       margin: 0;
       width: 100%;
       height: 450px;
@@ -382,7 +470,7 @@ h2{
   .b3{ height: 55%}
   .b4{ height: 75%}
   .b5{ height: 85%}
-  footer{
+ /* footer{
       position: absolute;
       bottom: 0px;
       width: 100%;

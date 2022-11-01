@@ -1,22 +1,39 @@
-/*font-family: 'Playfair Display', serif;*/
-/*Colores
-verde barra lateral #009458 RBG( 0 - 148 - 88 )  rgba(0, 148, 88, 1)
-verde clarito #69BF97 RBG( 105 - 191 - 151 ) rgba(105, 191, 151, 1)
-blanco #FFFFFF  RBG( 255 - 255 - 255)  rgba(255, 255, 255, 1)*/
-
-/*Colores
-rojo: #ff303
-naranja: #FF3D00
-amarillo: #F2F60E
-verde claro: #B4E944
-verde: #26FF02*/
-
 *{
     margin: 0px;
     box-sizing: border-box;
     padding: 0px;
 }
-
+body{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto 1fr ;
+}
+main{
+    grid-area: 2 / 1 /3 /2;
+    background-color: #D9D9D9;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows:  auto 1fr;
+    margin: 50pt 25pt;
+}
+.first{
+    grid-area: 1 / 1 / 2 / 3;
+    padding-left: 50pt;
+    padding-top: 70pt;
+    padding-bottom: 50pt;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    background-color: #fff;
+}
+.f1{
+    grid-area: 1 / 1 / 2 / 2;
+}
+.f2{
+    grid-area:  1 / 2 / 2 / 3;
+    display: flex;
+    align-items: flex-end;
+}
 /*Titulos*/
 h4{
     font-family: 'Playfair Display', serif;
@@ -28,7 +45,7 @@ h4{
 .join{
     background-color:#14661D;
     font-family: 'Playfair Display', serif;
-    font-size: 14px;
+    font-size: 20px;
     color: #fff;
     margin-left: -20px;
     border-radius: 10px;
@@ -39,7 +56,7 @@ h4{
     background: #D9D9D9;
     border-radius: 10px;
     font-family: 'Playfair Display', serif;
-    font-size: 14px;
+    font-size: 20px;
     border-color: #D9D9D9;
     width: 400px;
     text-align: center;
@@ -50,7 +67,6 @@ h4{
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: auto 1/2fr 1/2fr 1fr 1fr;
-    background-color: #D9D9D9;
     width: 100%;
     padding: 50pt 50pt;
 }
@@ -103,6 +119,7 @@ h4{
     font-family: 'Playfair Display', serif;
     font-size: 14pt;
     color: #706666;
+    font-weight: 600;
 }
 /*Progreso*/
 .pa{
@@ -177,6 +194,7 @@ h4{
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr;
     padding-top: 40pt;
+    padding-bottom: 50pt;
 }
 .g1{
     grid-area:  1 / 1 / 2 / 2;
@@ -199,6 +217,7 @@ h4{
 .s1{
     grid-area:  1 / 1 / 2 / 2;
     font-family: 'Playfair Display', serif;
+    padding-bottom: 20pt;
 }
 .s2{
     grid-area: 2 / 1 / 3 / 2;
@@ -215,25 +234,26 @@ h4{
 thead:hover{
     color:#542196;
 }
-
+.s2a{
+    padding: 20pt 0pt;
+}
 .s2b{
     background-color: #69BF97;
     align-items: center;
 }
 /*Estilos Table*/
-#sc{
+#scc{
     border: #69BF97;
     background-color: #69BF97;
-    padding-bottom: 100pt;
-    margin: 20pt;
     font-family: 'Playfair Display', serif;
     font-size: 14pt;
+    padding-bottom: 40pt;
 }
 #sc1{
     border: #fff;
     background-color: #D9D9D9;
-    padding-bottom: 100pt;
-    margin:20pt;
+    font-size: 14pt;
+    padding-bottom: 50pt;
 }
 /*Entregado*/
 .s3{

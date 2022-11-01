@@ -24,7 +24,7 @@
     text-align: center;
     justify-content: center;
     padding-left: 6%;
-    margin-top: 30px;
+    margin-top: 20px;
 }
 
 .logo{
@@ -78,9 +78,15 @@
 }
 
 /*footer*/
+
+
 .piePagina2{
     font-size: 14px;
     padding-top: 1rem;
+}
+
+.red{
+    width: 50px;
 }
 
 .condiciones{
@@ -306,6 +312,7 @@
 
 .reacciones{
     font-size: 7px;
+    display: flex;
     margin-top: -135px;
     z-index: 3;
 }
@@ -314,8 +321,7 @@
 /* calificaciones emojis*/
 
 .calificacion1{
-    position:relative;
-    margin-left: 40px;
+    margin-left: 20px;
     margin-top: -10px;
 }
 

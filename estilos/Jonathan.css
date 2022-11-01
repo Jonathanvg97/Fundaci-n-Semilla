@@ -204,9 +204,7 @@ details > summary:first-of-type {
     background: #000;
     padding: 30px;
     grid-area: 3 / 1 / 4 /2;
-    position: absolute;
-    top:170rem;
-    width: 100%;
+    position: relative;
 }
 .piePagina1{
     display: flex;

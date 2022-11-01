@@ -149,6 +149,218 @@ Ejemplo:
 •	El atributo de relleno vincula el elemento de elipse al degradado.
 
 
+documentacion jhon fredy bernal rojas  
+encargado de la seccion b del body 
+
+1.  emmpese buscando como hacer que el titulo puediera tener una animacion con css y  obtuve un muy buen resultado ya que el titulo al recargar lapagina     se desplaza de derecha a izquierda esto lo consegui con el siguiente codigo de css 
+
+
+@keyframes titulo-diplomados{/*---------asi se describen los fotogramas de la animacion----------*/
+    from{/*-------fotograma donde empieza la animacion---------*/
+        margin-left: 100%;
+        width: 300%
+    }
+
+    to {/*------------fotograma donde termina la animacion-------------*/
+        margin-left: 0%;
+        width: 100%;
+    }
+}
+
+
+2. de hay continue con la busqueda de cono hacer un medidor de minimo a maximo intente buscarlo solo con css y html  pero no logre conseguirlo  asi que      use uno que tenia funcionalidad script pero le quite la funcionalidad quedo solo como maqueta y lo consegui con el siguiente codigo 
+
+
+                        <div class="wrapper">
+                            <div>
+                                <div class="line"></div>
+                                <div class="number n0">0%</div>
+                                <div class="number n25">25%</div>
+                                <div class="number n90">50%</div>
+                                <div class="number n75">75%</div>
+                                <div class="number n180">100%</div>
+                                <div class="circle2"></div>
+                                <div class="circle1"></div>
+                            </div>
+                            <input type="number" min="0" max="100" value="0">
+                        </div>
+                        <div>
+                            <DIV class="lista-del-medidor"> 
+                                <UL class="significado-de-los-volores" >
+                                    <LI class="uno">MAL</LI>
+                                    <LI class="dos">REGULAR</LI>
+                                    <LI class="tres">BIEN</LI>
+                                    <LI class="cuatro">EXELENTE</LI>
+                                </UL>
+                            </DIV>
+                        </div>
+                        
+                        
+3. el siguiente paso complicado para mi fue hacer una estadistica lineal  del la asistencia promedio semanal   en ese me tomo un poco mas de tiempo encontrar como hacerlo pero afin lo consegui y lo logre con un codigo html  vasico y un css algo compejo  
+
+
+body{
+  background-color: #ededed;
+}
+.board{
+    margin: auto;
+    width: 55%;
+    height: 450px;
+    background-color: #e2e2e2;
+    padding: 10px;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+.titulo_grafica{
+    width: 100%;
+    height: 10%;
+}
+.titulo_grafica>h3{
+    padding: 0;
+    margin: 0px;
+    text-align: center;
+    color: #666666;
+}
+.sub_board{
+    width: 100%;
+    height: 90%;
+    padding: 10px;
+    margin-top: 0px;
+    background-color:#f4f4f4;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+.sep_board{
+    width: 100%;
+    height: 10%;
+}
+.cont_board{
+    width: 100%;
+    height: 80%;
+}
+.graf_board{
+    width: 85%;
+    height: 100%;
+    float: right;
+    margin-top: 0px;
+    background-color: darkgrey;
+    border-left: 2px solid #999999;
+    border-bottom: 2px solid #999999;
+    box-sizing: border-box;
+    display: flex;
+    background: -moz-linear-gradient(top, rgba(0,0,0,0) 0%, 
+    rgba(0,0,0,0) 9.5%,  rgba(0,0,0,0.3) 10%, rgba(0,0,0,0) 10.5%, 
+    rgba(0,0,0,0) 19.5%, rgba(0,0,0,0.3) 20%, rgba(0,0,0,0) 20.5%, 
+    rgba(0,0,0,0) 29.5%, rgba(0,0,0,0.3) 30%, rgba(0,0,0,0) 30.5%, 
+    rgba(0,0,0,0) 39.5%, rgba(0,0,0,0.3) 40%, rgba(0,0,0,0) 40.5%, 
+    rgba(0,0,0,0) 49.5%, rgba(0,0,0,0.3) 50%, rgba(0,0,0,0) 50.5%, 
+    rgba(0,0,0,0) 59.5%, rgba(0,0,0,0.3) 60%, rgba(0,0,0,0) 60.5%, 
+    rgba(0,0,0,0) 69.5%, rgba(0,0,0,0.3) 70%, rgba(0,0,0,0) 70.5%, 
+    rgba(0,0,0,0) 79.5%, rgba(0,0,0,0.3) 80%, rgba(0,0,0,0) 80.5%, 
+    rgba(0,0,0,0) 89.5%, rgba(0,0,0,0.3) 90%, rgba(0,0,0,0) 90.5%,  
+    rgba(0,0,0,0) 100%);
+
+    background: -webkit-linear-gradient(top, rgba(0,0,0,0) 0%, 
+    rgba(0,0,0,0) 9.5%,  rgba(0,0,0,0.3) 10%, rgba(0,0,0,0) 10.5%, 
+    rgba(0,0,0,0) 19.5%, rgba(0,0,0,0.3) 20%, rgba(0,0,0,0) 20.5%, 
+    rgba(0,0,0,0) 29.5%, rgba(0,0,0,0.3) 30%, rgba(0,0,0,0) 30.5%, 
+    rgba(0,0,0,0) 39.5%, rgba(0,0,0,0.3) 40%, rgba(0,0,0,0) 40.5%, 
+    rgba(0,0,0,0) 49.5%, rgba(0,0,0,0.3) 50%, rgba(0,0,0,0) 50.5%, 
+    rgba(0,0,0,0) 59.5%, rgba(0,0,0,0.3) 60%, rgba(0,0,0,0) 60.5%, 
+    rgba(0,0,0,0) 69.5%, rgba(0,0,0,0.3) 70%, rgba(0,0,0,0) 70.5%, 
+    rgba(0,0,0,0) 79.5%, rgba(0,0,0,0.3) 80%, rgba(0,0,0,0) 80.5%, 
+    rgba(0,0,0,0) 89.5%, rgba(0,0,0,0.3) 90%, rgba(0,0,0,0) 90.5%,  
+    rgba(0,0,0,0) 100%);
+
+    background: linear-gradient(to bottom, rgba(0,0,0,0) 0%,
+    rgba(0,0,0,0) 9.5%,  rgba(0,0,0,0.3) 10%, rgba(0,0,0,0) 10.5%, 
+    rgba(0,0,0,0) 19.5%, rgba(0,0,0,0.3) 20%, rgba(0,0,0,0) 20.5%, 
+    rgba(0,0,0,0) 29.5%, rgba(0,0,0,0.3) 30%, rgba(0,0,0,0) 30.5%, 
+    rgba(0,0,0,0) 39.5%, rgba(0,0,0,0.3) 40%, rgba(0,0,0,0) 40.5%, 
+    rgba(0,0,0,0) 49.5%, rgba(0,0,0,0.3) 50%, rgba(0,0,0,0) 50.5%, 
+    rgba(0,0,0,0) 59.5%, rgba(0,0,0,0.3) 60%, rgba(0,0,0,0) 60.5%, 
+    rgba(0,0,0,0) 69.5%, rgba(0,0,0,0.3) 70%, rgba(0,0,0,0) 70.5%, 
+    rgba(0,0,0,0) 79.5%, rgba(0,0,0,0.3) 80%, rgba(0,0,0,0) 80.5%, 
+    rgba(0,0,0,0) 89.5%, rgba(0,0,0,0.3) 90%, rgba(0,0,0,0) 90.5%, 
+    rgba(0,0,0,0) 100%);
+
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#00ffffff',GradientType=0 );
+}
+.barra{
+    width:100%;
+    height: 100%;
+    margin-right: 15px;
+    margin-left: 15px;
+    background-color: none;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+}
+.sub_barra{
+    width: 100%;
+    height: 80%;
+    background: #00799b;
+    background: -moz-linear-gradient(top, #00799b 0%, #64d1be 100%);
+    background: -webkit-linear-gradient(top, #00799b 0%,#64d1be 100%);
+    background: linear-gradient(to bottom, #00799b 0%,#64d1be 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00799b', endColorstr='#64d1be',GradientType=0 );
+    
+    -webkit-border-radius: 3px 3px 0 0;
+    border-radius: 3px 3px 0 0;
+}
+.tag_g{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    margin-bottom: 30px;
+    text-align: center;
+    margin-top: -20px;
+    z-index: 2;
+}
+.tag_leyenda{
+    width: 100%;
+    text-align: center;
+    margin-top: 5px;
+}
+.tag_board{
+    height: 100%;
+    width: 15%;
+    border-bottom: 2px solid rgba(0,0,0,0);
+    box-sizing: border-box;
+}
+.sub_tag_board{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: flex-end;
+    flex-wrap: wrap;
+}
+.sub_tag_board>div{
+    width: 100%;
+    height: 10%;
+    text-align: right;
+    padding-right: 10px;
+    box-sizing: border-box;
+}
+.b1{ height: 35%}
+.b2{ height: 45%}
+.b3{ height: 55%}
+.b4{ height: 75%}
+.b5{ height: 85%}
+footer{
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    text-align: center;
+    font-size: 12px;
+    font-family: sans-serif;
+}
+       
+       
+       
+4.  en este paso ya me fue un poco mas sencillo acomodar las estructuras con displey flex  para despues unir me trabajo con el de mis compañeros        
+       
+                        
 
 
 

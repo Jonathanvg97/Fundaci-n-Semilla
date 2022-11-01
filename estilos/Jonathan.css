@@ -1,36 +1,14 @@
-/*font-family: 'Playfair Display', serif;*/
-/*Colores
-verde barra lateral #009458 RBG( 0 - 148 - 88 )  rgba(0, 148, 88, 1)
-verde clarito #69BF97 RBG( 105 - 191 - 151 ) rgba(105, 191, 151, 1)
-blanco #FFFFFF  RBG( 255 - 255 - 255)  rgba(255, 255, 255, 1)*/
-
-/*Colores
-rojo: #ff303
-naranja: #FF3D00
-amarillo: #F2F60E
-verde claro: #B4E944
-verde: #26FF02*/
-
-
-*{
-    margin: 0px;
-    box-sizing: border-box;
-    padding: 0px;
-}
 .encabezado{
     width: 100%;
     height: 40%;
     z-index: 0;
     position: absolute;
-
 }
-
 .logo{
     position: absolute;
     padding-left: 8%;
     padding-top: 7%;
     height: 14rem;
-
 }
 header{
     grid-area: 1 / 1 / 2 / 2;
@@ -121,7 +99,7 @@ header h1{
     font-weight: bold;
 }
 
-.barra .salir{
+.barra1 .salir{
     text-align: center;
     transition: .4s all;
     font-size: 0px;
@@ -129,7 +107,7 @@ header h1{
     cursor: pointer;
 }
 
-.barra .logo2{
+.barra1 .logo2{
     margin: 180px 55px ;
     height: 120px;
     width: 120px;
@@ -137,55 +115,55 @@ header h1{
 }
 
 
-.barra:hover{
+.barra1:hover{
     font-size: 14px;
     width: 20%;
     height: 100%px;
     background-color: #009470;
 }
 
-.barra:hover .hamburguesa{
+.barra1:hover .hamburguesa{
     display: none; /*se desaparece el menu hamburguesa*/
  } 
 
-.barra:hover h2{
+.barra1:hover h2{
     padding: 20px;
     font-size: 28px;
 }
 
-.barra:hover img{
+.barra1:hover img{
     display: block;
     height: 120px;
     width: 120px;
     
 }
 
-.barra:hover span{
+.barra1:hover span{
     display: flex;
-   text-align: center;
+    text-align: center;
 }
 
-.barra:hover a{
+.barra1:hover a{
     font-size: 15px;
     color: #000;
     display: block;
     padding: 18px; /*espacio entre los items de cada opcion*/
 }
 
-.barra:hover a:hover{
+.barra1:hover a:hover{
     border-radius: 40rem;
     font-size: 18px;
     background-color: #B0CFC1
 }
 
-.barra:hover summary{
+.barra1:hover summary{
     border-radius: 40rem;
     font-size: 24px;
     background-color: #4CFDB6;
     padding: 1rem;
 }
 
-.barra:hover .salir{
+.barra1:hover .salir{
     border-radius: 40rem;
     font-size: 24px;
     background-color:#FF0404 ;
@@ -209,15 +187,10 @@ details[open] .detalle{
 summary::marker{/*quitar decoracion desplegables*/
     content: "";
 }
-
-
-
 details > summary:first-of-type {
     list-style: inside disclosure-closed;
     cursor: pointer;
 }
-
-
 details > summary:first-of-type {
     list-style: inside disclosure-closed;
     cursor: pointer;
@@ -230,8 +203,10 @@ details > summary:first-of-type {
     color:#fff;
     background: #000;
     padding: 30px;
-    grid-area: 4 / 1 / 5 /2;
-
+    grid-area: 3 / 1 / 4 /2;
+    position: absolute;
+    top:170rem;
+    width: 100%;
 }
 .piePagina1{
     display: flex;
@@ -567,6 +542,7 @@ details > summary:first-of-type {
 }
 
 .reacciones{
+    grid-area: 3 / 1 / 4/ 2 ;
     font-size: 18px;
     font-family: 'Playfair Display', serif;
     display:flex;
